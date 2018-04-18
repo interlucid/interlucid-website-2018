@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Interlucid | Music and other noise</title>
+    <style media="screen">
+
+        @font-face {
+        font-family: "Orbitron";
+        src: url(/fonts/orbitron-medium.ttf) format("truetype");
+        src: url(/fonts/orbitron-medium.woff) format("woff");
+        }
+
+      body {
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        background: #121212;
+        color: #eaeaea;
+      }
+
+      a {
+        color: #a0d5e7;
+      }
+
+			img {
+				width: 50%;
+			}
+
+      h1 {
+        font-size: 2em;
+        font-weight: 900;
+      }
+
+			h2 {
+				font-weight: 100;
+			}
+
+			.container {
+				margin: auto;
+				padding: 5%;
+				max-width: 800px;
+			}
+
+			.responsive-horizontal {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.responsive-horizontal > * {
+				padding: 20px;
+				text-align: right;
+			}
+
+			header {
+				text-align: center;
+			}
+
+			footer {
+				margin: 20px;
+				text-align: center;
+			}
+
+			iframe {
+				border: 0;
+				width: 400px;
+				height: 500px;
+			}
+
+            .share-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: white;
+                width: 100%;
+                border: solid white .1em;
+                border-radius: .3em;
+            }
+
+            .share-link > * {
+                flex-basis: 50%;
+            }
+
+            .share-link div img {
+                display: block;
+                margin-left: auto;
+            }
+
+            .share-link + .share-link {
+                margin-top: .5em;
+            }
+
+            .share-icon {
+				height: 4em;
+				width: 4em;
+			}
+
+            .album-icon {
+                height: 8em;
+                width: 8em;
+            }
+
+            .horizontal-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .horizontal-container > * + * {
+                margin-left: 1em;
+            }
+
+            .links {
+                max-width: 500px;
+                margin: auto;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+			@media (max-width: 768px) {
+				.responsive-horizontal {
+					flex-direction: column;
+				}
+			}
+
+        </style>
+
+		<link rel="icon" href="favicon.png" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+  <body>
+		<div class="container">
+			<article>
+				<section>
+					<div class="links horizontal-container"><img class="album-icon" src="/images/self-aware.png" alt=""><h1>Listen to <em>Self-Aware</em>!</h1></div>
+					<h2>Stream it:</h2>
+                    <div class="links">
+                        <a class="share-link" href="https://open.spotify.com/album/1y1f2JOEENNVeBAlmTniQm" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/spotify.png"></div>
+                            <span>Spotify</span>
+                        </a>
+                        <a class="share-link" href="https://geo.itunes.apple.com/us/album/self-aware-ep/1370093167?app=music" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/apple-music.png"></div>
+                            <span>Apple Music</span>
+                        </a>
+                        <a class="share-link" href="https://music.amazon.com/albums/B07C2BTR2R" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/amazon-music.png"></div>
+                            <span>Amazon Music</span>
+                        </a>
+                        <a class="share-link" href="https://play.google.com/music/m/B43n4mkmsx7rjywohdyct3c6gjy?signup_if_needed=1" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/google-play-music.png"></div>
+                            <span>Google Play Music</span>
+                        </a>
+                        <a class="share-link" href="https://soundcloud.com/interlucid/sets/self-aware" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/soundcloud.png"></div>
+                            <span>SoundCloud</span>
+                        </a>
+                        <a class="share-link" href="https://www.deezer.com/album/60909672" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/deezer.png"></div>
+                            <span>Deezer</span>
+                        </a>
+                        <a class="share-link" href="https://listen.tidal.com/album/87159328" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/tidal.png"></div>
+                            <span>Tidal</span>
+                        </a>
+                    </div>
+                    <h2>Download it:</h2>
+                    <div class="links">
+                        <a class="share-link" href="https://interlucid.bandcamp.com/album/self-aware" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/bandcamp.png"></div>
+                            <span>Bandcamp (best deal!)</span>
+                        </a>
+                        <a class="share-link" href="https://geo.itunes.apple.com/us/album/self-aware-ep/1370093167?app=itunes" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/itunes.png"></div>
+                            <span>iTunes</span>
+                        </a>
+                        <a class="share-link" href="https://play.google.com/store/music/album?id=B43n4mkmsx7rjywohdyct3c6gjy" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/google-play-music.png"></div>
+                            <span>Google Play Music</span>
+                        </a>
+                        <a class="share-link" href="https://smile.amazon.com/Self-Aware-Interlucid/dp/B07C2BTR2R" target="_blank">
+                            <div><img class="share-icon" src="/images/icons/amazon-music.png"></div>
+                            <span>Amazon Music</span>
+                        </a>
+                    </div>
+                    <h2><a href="/">Home page</a></h2>
+				</section>
+			<footer>Copyright © Interlucid 2018</footer>
+		</div>
+  </body>
+</html>
