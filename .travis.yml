@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - node
+
+before_install:
+  # - npm i -g polymer-cli
+  - npm i -g firebase-tools
+
+# install:
+  # - cd public
+  # - npm install
+
+script:
+  # - polymer build
+  # - cd ..
+  - firebase deploy --token $FIREBASE_TOKEN
