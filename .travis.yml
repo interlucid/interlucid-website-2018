@@ -6,10 +6,14 @@ node_js:
 before_install:
   # - npm i -g polymer-cli
   - npm i -g firebase-tools
+  - npm i -g bower
+  - cd public
+  - git clone https://github.com/interlucid/web-audio-api
 
-# install:
-  # - cd public
-  # - npm install
+install:
+  - cd web-audio-api
+  - bower install
+  - cd ../..
 
 script:
   # - polymer build

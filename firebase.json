@@ -1,8 +1,16 @@
 {
-  "database": {
-    "rules": "database.rules.json"
-  },
-  "hosting": {
-    "public": "public"
-  }
+    "database": {
+        "rules": "database.rules.json"
+    },
+    "hosting": {
+        "public": "public",
+        "rewrites": [   {
+                "source": "/web-audio-api/*",
+                "destination": "/web-audio-api/index.html"
+            }
+        ],
+        "ignore": [
+            ".git"
+        ]
+    }
 }
