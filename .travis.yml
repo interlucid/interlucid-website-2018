@@ -12,6 +12,8 @@ before_install:
 
 install:
   - cd web-audio-api
+  - ls
+  - pwd
   - bower install
   - cd ../..
 
