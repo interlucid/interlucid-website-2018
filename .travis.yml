@@ -4,7 +4,7 @@ node_js:
   - node
 
 before_install:
-  # - npm i -g polymer-cli
+  - npm i -g polymer-cli
   - npm i -g firebase-tools
   - cd public
   - git clone https://github.com/interlucid/web-audio-api
@@ -14,9 +14,8 @@ install:
   - ls
   - pwd
   - npm install
-  - cd ../..
 
 script:
-  # - polymer build
-  # - cd ..
+  - polymer build
+  - cd ../..
   - firebase deploy --token $FIREBASE_TOKEN
