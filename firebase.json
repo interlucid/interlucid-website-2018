@@ -6,7 +6,7 @@
         "public": "public",
         "rewrites": [   {
                 "source": "/web-audio-api/*",
-                "destination": "/web-audio-api/index.html"
+                "destination": "/web-audio-api/build/default/index.html"
             }
         ],
         "ignore": [
