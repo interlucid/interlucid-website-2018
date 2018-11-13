@@ -129,6 +129,14 @@
             .responsive-horizontal {
                 flex-direction: column;
             }
+
+            .responsive-horizontal > * + * {
+                margin: 0;
+            }
+
+            .responsive-horizontal > * {
+                text-align: center;
+            }
         }
 
         </style>
@@ -139,7 +147,10 @@
     <body>
         <article class="container">
             <section>
-                <div class="links horizontal-container"><img class="album-icon" src="/images/conversion-to-indifference-small.png" alt=""><h1>Listen to <em>Conversion to Indifference</em>!</h1></div>
+                <div class="links horizontal-container responsive-horizontal">
+                    <img class="album-icon" src="/images/conversion-to-indifference-small.png" alt="">
+                    <h1>Listen to <em>Conversion to Indifference</em>!</h1>
+                </div>
                 <h2>Stream it:</h2>
                 <div class="links">
                     <a class="share-link" href="https://open.spotify.com/album/4V7GkGeoStuolbKtW1ljs1" target="_blank">
