@@ -2,3 +2,4 @@ public/web-audio-api
 **.DS_Store
 firebase-debug.log
 .vscode
+.firebase/*
